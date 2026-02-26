@@ -369,6 +369,7 @@ footer {
   }
 
   .questions {
+    margin: 10px 0;
     p {
       width: 100%;
       font-size: 0.8rem;
