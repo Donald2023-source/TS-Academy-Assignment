@@ -68,9 +68,8 @@ nav img {
   }
 }
 
-
 .buttons {
-    display: flex;
+  display: flex;
 }
 
 .data-understanding {
@@ -249,14 +248,14 @@ footer {
   color: white;
   padding: 20px 0;
 
-  p{
+  p {
     margin: 10px 0;
   }
 
   .main-content {
     display: flex;
     flex-direction: column;
-    
+
     span {
       display: flex;
       align-items: center;
@@ -266,15 +265,78 @@ footer {
 }
 
 .rights {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
 }
 
 .questions {
-    margin: 10px 0;
-    h3 {
-        color: #164baf;
-        margin: 20px 0;
+  margin: 10px 0;
+  h3 {
+    color: #164baf;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    gap: 20px;
+
+    .left-side {
+      width: 100%;
+      text-align: center;
+
+      p {
+        font-size: 0.8rem;
+      }
+
+      h3 {
+        width: 100%;
+        line-height: 2.5rem;
+      }
     }
+
+    img {
+      width: 60%;
+    }
+  }
+
+  .data-understanding {
+    text-align: center;
+
+    p {
+      width: 100%;
+      font-size: 0.8rem;
+      line-height: 1.5rem;
+      margin: 20px 0;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    place-content: center;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .planet-glance {
+    p {
+      width: 100%;
+      font-size: 0.8rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  .table-wrapper {
+    width: 100%;
+    overflow: scroll;
+  }
 }
